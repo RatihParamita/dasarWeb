@@ -1,15 +1,17 @@
 <?php
-/*if(isset($_FILES['file'])){
+if(isset($_FILES['file'])){
     $errors = array();
     $file_name = $_FILES['file']['name'];
     $file_size = $_FILES['file']['size'];
     $file_tmp = $_FILES['file']['tmp_name'];
     $file_type = $_FILES['file']['type'];
     @$file_ext = strtolower("" . end(explode('.', $_FILES['file']['name'])) . "");
-    $extentions = array("pdf", "doc", "docx", "txt");
+    //$extentions = array("pdf", "doc", "docx", "txt");
+    $extentions = array("jpg", "jpeg", "png");
 
     if(in_array($file_ext, $extentions) === false){
-        $errors[] = "Ekstensi file yang diizinkan adalah PDF, DOC, DOCX, atau TXT.";
+        //$errors[] = "Ekstensi file yang diizinkan adalah PDF, DOC, DOCX, atau TXT.";
+        $errors[] = "Ekstensi file yang diizinkan adalah JPG, JPEG, dan PNG.";
     }
 
     if($file_size > 2097152){
@@ -22,9 +24,9 @@
     } else{
         echo implode(" ", $errors);
     }
-}*/
+}
 
-if(isset($_FILES['files'])){
+/*if(isset($_FILES['files'])){
     $errors = array();
     $uploaded_files = array();
     foreach($_FILES['files']['tmp_name'] AS $key => $tmp_name){
@@ -56,5 +58,5 @@ if(isset($_FILES['files'])){
     } else{
         echo implode(" ", $errors);
     }
-}
+}*/
 ?>
