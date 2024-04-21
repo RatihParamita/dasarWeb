@@ -18,11 +18,11 @@
           <form action="fungsi/edit.php?jabatan=edit" method="POST">
             <input type="hidden" value="<?php echo $row['id']; ?>" name="id">
             <div class="mb-3">
-              <label for="jabatan" class="form-label">Jabatan</label>
+              <label for="jabatan" class="form-label">Jabatan:</label>
               <input type="text" class="form-control" name="jabatan" value="<?= $row['jabatan']; ?>">
             </div>
             <div class="mb-3">
-              <label for="keterangan" class="form-label">Keterangan</label>
+              <label for="keterangan" class="form-label">Keterangan:</label>
               <textarea class="form-control" name="keterangan"><?= $row['keterangan']; ?></textarea>
             </div>
             <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Ubah</button>
