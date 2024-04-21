@@ -11,7 +11,7 @@ if(!empty($_SESSION['username'])){
         if(mysqli_query($koneksi, $query)){
             pesan('success', "Jabatan baru ditambahkan.");
         } else{
-            pesan('danger', "Menambahkan jabatan karena: " . mysqli_error($koneksi));
+            pesan('danger', "Gagal menambahkan jabatan karena: " . mysqli_error($koneksi));
         } header("Location: ../index.php?page=jabatan");
     }
 }

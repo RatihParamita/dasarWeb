@@ -12,7 +12,7 @@ if(!empty($_SESSION['username'])){
         if(mysqli_query($koneksi, $query)){
             pesan('success', "Jabatan telah diubah.");
         } else{
-            pesan('danger', "Mengubah jabatan karena: " . mysqli_error($koneksi));
+            pesan('danger', "Gagal mengubah jabatan karena: " . mysqli_error($koneksi));
         } header("Location: ../index.php?page=jabatan");
     }
 }
